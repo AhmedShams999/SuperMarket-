@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SuperMarket.exe" version="1.0.0.0" publicKeyToken="2f4660f68724ff28" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SuperMarket" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SuperMarket.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu_UI_v1.5.3.dll" size="330752">
+      <assemblyIdentity name="Bunifu_UI_v1.5.3" version="1.5.3.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>duHT7JX973Srr5A5Ldb0ql40SSKr8R5XJwcofUZ/KTA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Guna.UI.dll" size="1136808">
+      <assemblyIdentity name="Guna.UI" version="1.9.0.1" publicKeyToken="AD275B4BE6718D4B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>V20t4snvW8Hqm91zro9AgAQmADfDtyIn7tJ+mVFmJ20=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SuperMarket.exe" size="95224">
+      <assemblyIdentity name="SuperMarket" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>+Tgvoe1DzWcnUnV8pQ36Bfx1SsnLams/tbfd7tFJocA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Database1.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8Zh0/oaDyPNBYGS+6siclKjWU4WhEjuqTPEaj6Gztlc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Database1_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CZfTh1g5ZLtKPB2UufK7rW+TqyKkh0gTy3i9cFIi+lw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="SuperMarket.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-4OO9V2A\EL-YaMaMa" issuerKeyHash="da7f00b3675711dcd4d761310fa266bb9eff13ed" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>1LYO1InNqnOHwsykJbk/MrbR7g7FCqbBbZ1JtcWIipI=</DigestValue></Reference></SignedInfo><SignatureValue>OVb+Ft8mo8Oen3GjjC36/+ewWPLolt/dofaY/vmBrAYMLGwbSftBsdllsc7ETW1v2CfjDueNpQDZaSSWeQLqtnNHULri+Ci43wmg2hExm+jM3mw2LOL9v5vhYyj07fxZbpF2fO+L2McKW+iglEssYL1vw+YuOnaSxPOlapImrTk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sT42g2MItJYX+iWm9gUL4iwGeIrwoKpmkrd/BCtO+EeDBQHr+RQv4EWgLW5+jMfUIlNNg+pwnMz6ctHM0tkskcB3VSEEA33i/FE6cwLSVReYIAjIVk82SGNjrR399esXOqJcZb/Hd5OewEA3ZlanmI0eDU8iVCpKUNLduG3cO/U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="928a88c5b5499d6dc1a60ac50eeed1b6323fb925a4ccc28773aacd89d40eb6d4" Description="" Url=""><as:assemblyIdentity name="SuperMarket.exe" version="1.0.0.0" publicKeyToken="2f4660f68724ff28" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-4OO9V2A\EL-YaMaMa</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>wRQRL6FU/DHZYk50mXszYdMWzjpZ0idmQE+LTlCQQnA=</DigestValue></Reference></SignedInfo><SignatureValue>UzoRIpfFl1czgYd9ZaAEtx+cqTZXXoelCcmuSbKCr8ApyPlvo8wCvoCd9WmwM/4/Bui2yNPpcbA+1LYCBkg224iGpIyoJuAoPWYzWAiwZ/G6Qwwox564UB5LtwWrQaG2+tbA2tLzzk0XESx5rSNj37M86Q8Jf4dvc3Fbo5cFWvU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sT42g2MItJYX+iWm9gUL4iwGeIrwoKpmkrd/BCtO+EeDBQHr+RQv4EWgLW5+jMfUIlNNg+pwnMz6ctHM0tkskcB3VSEEA33i/FE6cwLSVReYIAjIVk82SGNjrR399esXOqJcZb/Hd5OewEA3ZlanmI0eDU8iVCpKUNLduG3cO/U=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQcPptsnqgbqhE2V9Ml88gkzANBgkqhkiG9w0BAQsFADA9MTswOQYDVQQDHjIARABFAFMASwBUAE8AUAAtADQATwBPADkAVgAyAEEAXABFAEwALQBZAGEATQBhAE0AYTAeFw0yMjA2MDMxMTQ2NTZaFw0yMzA2MDMxNzQ2NTZaMD0xOzA5BgNVBAMeMgBEAEUAUwBLAFQATwBQAC0ANABPAE8AOQBWADIAQQBcAEUATAAtAFkAYQBNAGEATQBhMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxPjaDYwi0lhf6Jab2BQviLAZ4ivCgqmaSt38EK074R4MFAev5FC/gRaAtbn6Mx9QiU02D6nCczPpy0czS2SyRwHdVIQQDfeL8UTpzAtJVF5ggCMhWTzZIY2OtHf316xc6olxlv8d3k57AQDdmVqeYjR4NTyJUKkpQ0t24bdw79QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAKmC0EuJpL1OFzYL0OxwzVut4oyHOSfdrvqdOKwLAjO/nM8KodvFQFYhG2YtpyE6i8xKXLDx3szFIP2TKWo57iq42P3x1yC2gKmPseg0+ngCLEdppkFxoYhgk7bJzcoXCGR+2CIw9tkUAqOQ+DgG3vcpnLNzh4jOtJ1qc1OK1c0k</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
